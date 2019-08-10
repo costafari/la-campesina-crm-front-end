@@ -8,6 +8,9 @@ import { LanguageTranslationModule } from './shared/modules/language-translation
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
+import { ClienteComponent } from './business/cliente/cliente-form/cliente/cliente.component';
+import { ClienteListComponent } from './business/cliente/cliente-list/cliente-list.component';
+import { ClienteFormComponent } from './business/cliente/cliente-form/cliente-form.component';
 
 @NgModule({
     imports: [
@@ -18,7 +21,7 @@ import { AuthGuard } from './shared';
         LanguageTranslationModule,
         AppRoutingModule
     ],
-    declarations: [AppComponent],
+    declarations: [AppComponent, ClienteComponent, ClienteListComponent, ClienteFormComponent],
     providers: [AuthGuard],
     bootstrap: [AppComponent]
 })
